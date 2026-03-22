@@ -1,4 +1,4 @@
-# 🌤️ WeatherEra — Weather App
+# 🌤️ WeathEra — Weather App
 
 **Assignment 2 | Interactive Frontend Development**
 **Made by Pragya Sinha**
