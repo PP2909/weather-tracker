@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WeatherEra 🌤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+    <div class="app-name">Weather<span>Era</span> 🌤️</div>
+    <div class="tagline">Check the weather anywhere, instantly!</div>
+    <div class="by-name">Made by Pragya Sinha</div>
+  </div>
+
+  <div class="search-box">
+    <input id="city" type="text" placeholder="Type a city name..." autocomplete="off"/>
+    <button onclick="getWeather()">Search 🔍</button>
+  </div>
+
+  <div class="loader" id="loader">
+    <div class="loader-dots"><span></span><span></span><span></span></div>
+    <div style="margin-top:0.5rem">Looking up the weather...</div>
+  </div>
+
+  <div class="error-msg" id="error-msg">😕 City not found. Try checking the spelling!</div>
+
+  <!-- BIG FRAME: left = current weather, right = 5-day forecast -->
+  <div class="big-frame" id="big-frame">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div>
+        <div class="city-name-big" id="city-name">—</div>
+        <div class="country-date"  id="country-date">—</div>
+      </div>
+
+      <div class="center-weather">
+        <div class="big-icon" id="weather-icon">🌤️</div>
+        <div class="big-temp" id="temp">—</div>
+        <div class="big-desc" id="desc">—</div>
+        <div class="feels"    id="feels">—</div>
+      </div>
+
+      <div class="mini-stats" id="mini-stats"></div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <div class="forecast-title">📅 5-Day Forecast</div>
+      <div class="forecast-list" id="forecast-list"></div>
+      <div class="live-badge">
+        <div class="live-dot"></div>
+        <span id="cond-text">Loading...</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Weather data by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
