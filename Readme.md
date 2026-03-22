@@ -1,4 +1,4 @@
-# 🌤️ SkyCast — Weather App
+# 🌤️ WeatherEra — Weather App
 
 **Assignment 2 | Interactive Frontend Development**
 **Made by Pragya Sinha**
